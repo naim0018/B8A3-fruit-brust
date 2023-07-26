@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Brust</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <head>
+      <nav>
+        <div
+          class="navbar container mx-auto rounded-full px-2 lg:px-12 py-4 my-12 bg-[#F85559] sm:justify-between sm:px-8"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Logo Start -->
+          <div class="navbar-center space-x-5">
+            <img src="./images/logo.png" alt="" />
+            <a class="normal-case text-xl">Fruit Brust</a>
+          </div>
+          <!-- Logo End Start -->
+          <!-- Search Button -->
+          <div class="hidden navbar-end relative lg:flex">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Search Here"
+              class="bg-white py-2 px-4 rounded-full"
+            />
+            <i class="fa-solid fa-magnifying-glass absolute right-4"></i>
+          </div>
+          <!-- Search Button End -->
+        </div>
+      </nav>
+    </head>
+
+    <main>
+      <!-- Hero Start -->
+      <section>
+        <div
+          class="hero min-h-screen"
+          style="
+            background-image: url(./images/banner1.png);
+          "
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Start -->
+    </main>
+    <footer></footer>
+  </body>
+</html>
