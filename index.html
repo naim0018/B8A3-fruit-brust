@@ -248,46 +248,72 @@
       <!-- Hero Start -->
 
       <!-- Deal OF The Day Start  -->
-      <section class="container ">
+      <section class="container mx-auto my-32">
         <!-- Time Start -->
-        <div class="flex">
-        <div class="">
-          <h2>
-            Deal of the day
-          </h2>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        </div>
+        <div class="flex items-center justify-between px-4">
+          <div class="space-y-6">
+            <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+            <p class="max-w-xl text-base font-medium text-[#12121271]">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
 
-        <div class="">
-          <div class="flex gap-5">
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value: 15"></span>
-              </span>
-              days
-            </div>
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value: 10"></span>
-              </span>
-              hours
-            </div>
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value: 24"></span>
-              </span>
-              min
-            </div>
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value: 32"></span>
-              </span>
-              sec
+          <div class="">
+            <div class="flex gap-5 text-center items-center justify-center">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 29"></span>
+                </span>
+                days
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical pb-5"></i>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15"></span>
+                </span>
+                hours
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical pb-5"></i>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 25"></span>
+                </span>
+                min
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical pb-5"></i>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 08"></span>
+                </span>
+                sec
+              </div>
             </div>
           </div>
         </div>
-      </div>
         <!-- Time End -->
+
+        <!-- Modal start -->
+        <div class="">
+          <!-- You can open the modal using ID.showModal() method -->
+          <button class="btn" onclick="my_modal_3.showModal()">
+            open modal
+          </button>
+          <dialog id="my_modal_3" class="modal">
+            <form method="dialog" class="modal-box">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
+                ✕
+              </button>
+              <h3 class="font-bold text-lg">Hello!</h3>
+              <p class="py-4">Press ESC key or click on ✕ button to close</p>
+            </form>
+          </dialog>
+        </div>
+
+        <!-- Modal End -->
       </section>
       <!-- Deal OF The Day End  -->
     </main>
